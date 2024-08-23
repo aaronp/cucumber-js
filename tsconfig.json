@@ -1,14 +1,17 @@
 {
     "compilerOptions": {
       "target": "ES6",
-      "module": "commonjs",
+      "module": "ES6",
+      "moduleResolution": "node",
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "outDir": "./dist",
       "rootDir": "./src",
-      "types": ["node", "cucumber"]
+      "types": ["node", "cucumber"],
+        "resolveJsonModule": true,
+        "isolatedModules": true
     },
     "include": ["src/**/*.ts"],
     "exclude": ["node_modules", "dist"]
