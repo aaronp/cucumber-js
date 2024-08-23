@@ -1,6 +1,6 @@
 // src/steps/create-asset.steps.ts
 import { Given, When, Then, Before, After } from '@cucumber/cucumber';
-import { expect } from 'chai';
+// import { expect } from 'chai';
 // const { Given, When, Then } = require('@cucumber/cucumber');
 // const { expect } = require('chai');
 // import { expect } from 'chai';
@@ -9,7 +9,7 @@ Given('I am on the asset creation page', async function () {
     await this.page.goto('http://your-app-url.com/asset-create');
 });
 
-When('I fill in the asset details with the following data', async function (dataTable) {
+When('I create an asset with the following data', async function (dataTable) {
     const assets = dataTable.hashes();
 
     for (const asset of assets) {
@@ -31,4 +31,4 @@ Then('I should see the new asset listed with the correct details', async functio
     const assetDescription = await this.page.$eval('.asset-description', el => el.textContent);
 
     // expect(assetName).to.equal('Laptop');
-})
+});
