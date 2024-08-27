@@ -1,30 +1,22 @@
 {
-  "name": "@cucumber/typescript-example",
+  "name": "cucumber-with-typescript",
   "version": "1.0.0",
-  "description": "A simple example of a TypeScript Cucumber-JS project",
-  "main": "src/index.ts",
-  "type": "module",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "./node_modules/.bin/cucumber-js -p default"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cucumber/cucumber-js-examples.git"
-  },
-  "keywords": [
-    "cucumber",
-    "bdd",
-    "typescript",
-    "example"
-  ],
-  "author": "Matt Wynne",
+  "keywords": [],
+  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cucumber/cucumber-js-examples/issues"
-  },
-  "homepage": "https://github.com/cucumber/cucumber-js-examples#readme",
   "devDependencies": {
-    "@cucumber/cucumber": "*",
-    "ts-node": "^10.4.0"
+    "@types/chai": "^4.1.7",
+    "@types/cucumber": "^4.0.5",
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "cucumber-pretty": "^1.5.0",
+    "cucumber-tsflow": "^3.2.0",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.3333"
   }
 }
